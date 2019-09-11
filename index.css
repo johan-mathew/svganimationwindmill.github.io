@@ -1,0 +1,118 @@
+.container-svg{
+    width: 400px;
+    margin: auto;
+    margin-top:150px;
+}
+@keyframes blade-rotation{
+    from {transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+@keyframes blade-intro{
+    from{transform: scale(0.1);
+         }
+    to{
+        transform: scale(1);
+        ;
+    }     
+}
+@keyframes cloud-1{
+    50%{
+        transform: translateX(70px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes tower {
+	0%{
+        transform: scaleY(0.00001);
+    }
+    70%{
+        transform: scaleY(1.2);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+
+}
+@keyframes bushes {
+	from{
+        transform: scaleY(0.00001);
+    }
+    to{
+        transform: scaleY(1);
+    }
+
+}
+#Blades{
+    animation: blade-rotation 5s linear infinite;
+    transform-origin: 603px 311px;
+    animation-delay: 0.5s;
+    position: absolute;
+}
+.Blades{
+    animation: blade-intro 1s;
+    transform-origin: 603px 311px;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    transform: scaleY(0.0001);
+}
+#cloud-1{
+    animation: cloud-1 7s linear infinite;
+}
+#cloud-2{
+    animation: cloud-1 7s linear infinite;
+    animation-delay: 2s;
+}
+#cloud-3{
+    animation: cloud-1 7s linear infinite;
+    animation-delay: 4s;
+}
+#Tower{
+    animation: tower 0.3s;
+    transform-origin: center bottom;
+    position: absolute;
+}
+#bush-1{
+    animation: bushes 0.1s linear ;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    transform-origin:bottom;
+    transform: scaleY(0.0001)
+}
+#bush-2{
+    animation: bushes 0.1s linear ;
+    animation-delay: 0.5s;
+    transform-origin:bottom;
+    animation-fill-mode: forwards;
+    transform: scaleY(0.0001)
+}
+#bush-3{
+    animation: bushes 0.1s linear ;
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+    transform-origin:bottom;
+    transform: scaleY(0.0001)
+}
+#bush-4{
+    animation: bushes 0.1s linear ;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+    transform-origin:bottom;
+    transform: scaleY(0.0001)
+}
+#bush-5{
+    animation: bushes 0.1s linear ;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+    transform-origin:bottom;
+    transform: scaleY(0.0001)
+}
+#bush-6{
+    animation: bushes 0.1s linear ;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+    transform-origin:bottom;
+    transform: scaleY(0.0001)
+}
